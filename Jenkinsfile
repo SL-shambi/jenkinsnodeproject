@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build'){
             steps {
-                sh "docker prune -y"
+                sh "docker container prune -f"
               }
         }
 
